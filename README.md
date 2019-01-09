@@ -1,4 +1,7 @@
 # A-star-algorithm-on-Arbitary-map
+ABOUT
+In this program I had applied the a-star algorithm to get the shortest distance between any two locations from the input. Here we have use two heuristics - shortest distance and fewest cities.
+
 STEPS TO RUN THE PROGRAM
 1.  Download the locations, connections and a1.java file and place it on desktop with the folder name a1.
 2.	The input files should be in the a1 folder only.
