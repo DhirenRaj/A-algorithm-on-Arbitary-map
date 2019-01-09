@@ -61,13 +61,7 @@ m[i][j]=1;
 m[j][i]=1;
 }
 }
-//System.out.print(s1);
 System.out.println("Available nodes are :\n"+s2);
-/*for(int i=0;i<size;i++){
-for(int j=0;j<size;j++){
-    System.out.print(m[i][j]+" ");
-}
-System.out.println();}*/
 
 }catch(Exception e){e.printStackTrace();}
 }
@@ -94,7 +88,6 @@ public void Path(int sp,int ep,List<Integer> visited)
         visit.add(alt.get(i));
         if(alt.get(i)==ep)
         {
-            //c++;//System.out.println(visit);
            paths.add(visit);
         }
         else
@@ -112,7 +105,6 @@ public void Output()
 {
 
     try{
-//PrintWriter out = new PrintWriter(new FileWriter(("output.txt"),true));
 for(int i=0;i<paths.size();i++)
 {List<Integer> path=new ArrayList<Integer>();
 path=paths.get(i);
@@ -128,7 +120,6 @@ System.out.println("Total path length "+total);
 System.out.println("-----------------------------------------");
 }
 
-//System.out.close();
     }catch(Exception e){e.printStackTrace();}
 }
 public double distance(int a,int b)
@@ -142,7 +133,6 @@ public double distance(int a,int b)
     f=y2-y1;
     z1=Math.pow(e,2);
     z2=Math.pow(f,2);
-    //System.out.println(x1+" "+y1+" "+x2+" "+y2+" "+e+" "+f+" "+z1+" "+z2+" "+(z1+z2));
     return Math.sqrt((z1+z2));
 }
 public static void main(String args[])
@@ -156,15 +146,10 @@ spi=s2.indexOf(sp);
 System.out.println("enter ending point");
 ep=sc.next();
 epi=s2.indexOf(ep);
-//System.out.println(spi);
-//System.out.println(epi);
 System.out.println("please wait for some time");
     List<Integer> visited= new ArrayList<Integer>();
     visited.add(spi);
     a.Path(spi,epi,visited);
     a.Output();
-   // System.out.println(a.paths.size());
-    //System.out.println(c);
-   // System.out.print("open output.txt file to view result");
 }
 }
